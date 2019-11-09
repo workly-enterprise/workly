@@ -1,0 +1,62 @@
+// Colors
+$primary:#0AC4BA;
+$secondary:#2BDA8E;
+$white:#ffff;
+
+// Font Family
+$logo-font-family:"grand-adventure";
+$text-font-family:"comforta-regular";
+
+@font-face {
+    font-family: $logo-font-family;
+    src: url(./fonts/Grandaventure.otf);
+}
+
+@font-face {
+    font-family: $text-font-family;
+    src: url(./fonts/Comfortaa-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    background: $primary;
+    background: linear-gradient(180deg, $primary 0%, $secondary 100%);
+}
+
+.top-bar {
+    position: fixed;
+    background: $white;
+    width: 100vw;
+    padding-left: 10px;
+    -webkit-box-shadow: -1px 10px 44px -24px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 44px -24px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 10px 44px -24px rgba(0, 0, 0, 0.75);
+}
+
+article {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: $white;
+    font-family: $text-font-family;
+    text-align: center;
+
+
+}
+
+hr {
+    background: $white;
+    border: none;
+    height: 0.5px;
+}
+
+footer {
+    position: fixed;
+    height: 20px;
+}
+
+.text-logo {
+    font-family: $logo-font-family;
+}

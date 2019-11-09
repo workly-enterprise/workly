@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "grand-adventure";
+  src: url(./fonts/Grandaventure.otf);
+}
+@font-face {
+  font-family: "comforta-regular";
+  src: url(./fonts/Comfortaa-Regular.ttf);
+}
+body {
+  margin: 0;
+  background: #0AC4BA;
+  background: linear-gradient(180deg, #0AC4BA 0%, #2BDA8E 100%);
+}
+
+.top-bar {
+  position: fixed;
+  background: #ffff;
+  width: 100vw;
+  padding-left: 10px;
+  -webkit-box-shadow: -1px 10px 44px -24px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 10px 44px -24px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 10px 44px -24px rgba(0, 0, 0, 0.75);
+}
+
+article {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #ffff;
+  font-family: "comforta-regular";
+  text-align: center;
+}
+
+hr {
+  background: #ffff;
+  border: none;
+  height: 0.5px;
+}
+
+footer {
+  position: fixed;
+  height: 20px;
+}
+
+.text-logo {
+  font-family: "grand-adventure";
+}
+
+/*# sourceMappingURL=styles.css.map */
