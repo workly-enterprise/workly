@@ -1,10 +1,22 @@
+hr {
+  background: #ffff;
+  border: none;
+  height: 1px;
+}
+
+footer div, .workly-features .phone-container, .workly-features .feature-container, article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @font-face {
   font-family: "grand-adventure";
   src: url(./fonts/Grandaventure.otf);
 }
 @font-face {
-  font-family: "comforta-regular";
-  src: url(./fonts/Comfortaa-Regular.ttf);
+  font-family: "proximanova-regular";
+  src: url(./fonts/proximanova-regular.ttf);
 }
 body {
   margin: 0;
@@ -14,6 +26,7 @@ body {
 
 .top-bar {
   position: fixed;
+  z-index: 1;
   background: #ffff;
   width: 100vw;
   padding-left: 10px;
@@ -22,30 +35,99 @@ body {
   box-shadow: -1px 10px 44px -24px rgba(0, 0, 0, 0.75);
 }
 
-article {
+.question-container {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+article {
   font-size: 40px;
   color: #ffff;
-  font-family: "comforta-regular";
+  font-family: "proximanova-regular";
   text-align: center;
 }
 
-hr {
-  background: #ffff;
-  border: none;
-  height: 0.5px;
+.workly-features {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.workly-features .feature-container {
+  box-sizing: border-box;
+  padding: 20px;
+  flex-direction: column;
+  height: 100%;
+}
+.workly-features .feature-container .item-feature-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.workly-features .feature-container .item-feature-container .item-feature-icon {
+  height: 100px;
+  width: 50%;
+  padding: 10px;
+}
+.workly-features .feature-container .item-feature-container .item-feature-icon img {
+  height: 100%;
+}
+.workly-features .feature-container .item-feature-container .item-feature {
+  width: 100%;
+}
+.workly-features .feature-container .item-feature-container .item-feature h3 {
+  margin: 0px;
+  font-size: 20px;
+  text-align: left;
+}
+.workly-features .feature-container .item-feature-container .item-feature p {
+  font-size: 11px;
+  text-align: left;
+}
+.workly-features .phone-container {
+  height: 100%;
+}
+.workly-features .phone-container .phone-image {
+  display: flex;
+  height: 100%;
+  box-shadow: -12px 8px 103px -38px #000;
+  border-radius: 50px;
+}
+.workly-features .phone-container .home-capture {
+  position: absolute;
+  height: 396px;
+  width: 220px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+@media (max-width: 600px) {
+  .workly-features {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+.text-logo {
+  font-family: "grand-adventure";
 }
 
 footer {
-  position: fixed;
-  height: 20px;
+  font-family: "proximanova-regular";
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+footer div {
+  flex-direction: column;
+}
+footer div h3 {
+  color: white;
 }
 
-.text-logo {
-  font-family: "grand-adventure";
+.android-logo {
+  height: 40px;
+  width: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
