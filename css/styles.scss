@@ -69,7 +69,6 @@ article {
 
     .feature-container {
         box-sizing: border-box;
-        padding: 20px;
         @extend %borders;
         @extend %display-flex-center-all;
         flex-direction: column;
