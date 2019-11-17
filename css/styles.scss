@@ -245,17 +245,43 @@ hr {
 
 footer {
     font-family: $text-font-family;
-    height: 50vh;
+    padding: 20px;
+    height: 30vh;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     div {
         @extend %borders;
         @extend %display-flex-center-all;
         flex-direction: column;
 
-        h3 {
+        h2 {
             color: white;
+            margin: 0;
+        }
+        .social-icons-container{
+            @extend %display-flex-center-all;
+            flex-direction: row;
+            a{
+                margin-left: 10px;
+            }
+        }
+    }
+    .social-container{
+        h2{
+            margin-bottom: 0;
+        }
+        ul{
+        }
+        li{
+            list-style: none;
+            color: white;
+            margin-bottom: 10px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            
         }
     }
 

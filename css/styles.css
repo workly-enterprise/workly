@@ -10,7 +10,7 @@ hr {
   height: 1px;
 }
 
-footer div, .benefits-container .benefits-content, .workly-features .phone-container, .workly-features .feature-container, article {
+footer div .social-icons-container, footer div, .benefits-container .benefits-content, .workly-features .phone-container, .workly-features .feature-container, article {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,14 +164,34 @@ article {
 
 footer {
   font-family: "proximanova-regular";
-  height: 50vh;
+  padding: 20px;
+  height: 30vh;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 footer div {
   flex-direction: column;
 }
-footer div h3 {
+footer div h2 {
+  color: white;
+  margin: 0;
+}
+footer div .social-icons-container {
+  flex-direction: row;
+}
+footer div .social-icons-container a {
+  margin-left: 10px;
+}
+footer .social-container h2 {
+  margin-bottom: 0;
+}
+footer .social-container li {
+  list-style: none;
+  color: white;
+  margin-bottom: 10px;
+}
+footer .social-container li a {
+  text-decoration: none;
   color: white;
 }
 
