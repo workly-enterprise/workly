@@ -208,6 +208,9 @@ article {
 }
 
 @media (max-width: 667px) {
+    .text-logo-hero{
+        font-size: 7rem !important;
+    }
     .workly-features {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
@@ -241,6 +244,10 @@ hr {
 
 .text-logo {
     font-family: $logo-font-family;
+}
+.text-logo-hero{
+    font-family: $logo-font-family;
+    font-size: 20rem;
 }
 
 footer {

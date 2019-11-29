@@ -138,6 +138,10 @@ article {
 }
 
 @media (max-width: 667px) {
+  .text-logo-hero {
+    font-size: 7rem !important;
+  }
+
   .workly-features {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -160,6 +164,11 @@ article {
 }
 .text-logo {
   font-family: "grand-adventure";
+}
+
+.text-logo-hero {
+  font-family: "grand-adventure";
+  font-size: 20rem;
 }
 
 footer {
